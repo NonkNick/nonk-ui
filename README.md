@@ -1,7 +1,7 @@
 # UI Library for Vue.js 3
 
 ### goals
-* 15 components
+* 15 components (kiezen)
   * 5 base
     >Alert, Avatar, Badge, Button, Button Group, Card, Heading, Icon, Image, Label, Link, Separator, Spinner, Text Input, Textarea, Toggle, Tooltip, Visually Hidden
   * 7 middle
@@ -9,3 +9,12 @@
   * 3 complex
     >Color Picker, Date Input, Datepicker, Progress Indicator, Rich Text Editor, Segmented Control, Slider, Stepper
 
+Ik zie dat dit ook voor de volgende opdracht is dus dat ook in gedachte houden.
+
+
+>#### [Component library](https://hackfront.nl/curriculum/blok-2/quizbuilder)
+>Voor UI gebruik je je eigen component library. Denk aan:
+Cards voor quiz- en vraagweergave
+Buttons voor acties
+Form components (input, select, textarea)
+Modals/toasts voor bevestigingen of meldingen
