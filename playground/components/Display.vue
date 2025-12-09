@@ -1,10 +1,9 @@
 <template>
-  <NkButton></NkButton>
+  <ButtonDemo/>
 </template>
 
 <script setup lang="ts">
-
-import { NkButton } from "nonk-ui";
+import ButtonDemo from "./ButtonDemo.vue";
 </script>
 
 <style scoped>

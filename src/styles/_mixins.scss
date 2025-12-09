@@ -1,0 +1,22 @@
+// Button variant mixin
+@mixin button-variant($bg-color, $hover-color, $text-color: white) {
+  background-color: $bg-color;
+  color: $text-color;
+
+  &:hover:not(.nk-button--disabled) {
+    background-color: $hover-color;
+  }
+}
+
+// Button size mixin
+@mixin button-size($padding, $font-size) {
+  padding: $padding;
+  font-size: $font-size;
+}
+
+// Disabled state mixin (reusable across components)
+@mixin disabled-state {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
