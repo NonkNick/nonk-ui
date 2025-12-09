@@ -1,0 +1,15 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.nk-button-group {
+  .nk-button {
+    border-radius: 0;
+  }
+  .nk-button:first-child {
+    border-radius: $border-radius 0px 0px $border-radius;
+  }
+
+  .nk-button:last-child {
+    border-radius: 0px $border-radius $border-radius 0px;
+  }
+}
