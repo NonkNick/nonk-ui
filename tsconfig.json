@@ -12,7 +12,8 @@
       "nonk-ui/*": ["src/*"],
       "@/*": ["src/*"]
     },
-    "types": ["vite/client"]
+    "types": ["vite/client"],       // keep Vite types
+    "skipLibCheck": true            // ✅ ignore types in node_modules to prevent errors
   },
   "include": [
     "src/**/*",
