@@ -14,6 +14,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': resolve(__dirname, 'src'),
+            'nonk-ui': resolve(__dirname, 'src')   // ← ADD THIS
         },
     },
     build: {
