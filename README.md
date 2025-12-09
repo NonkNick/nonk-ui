@@ -2,7 +2,9 @@
 
 ### Functionaliteit done
 * NkButton
+  * TODO: Styling
 * NkButtonGroup
+  * TODO MAYBE: dividers, overlopen van size verschil
 
 ### goals
 * 15 components (kiezen)
