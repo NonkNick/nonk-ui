@@ -1,5 +1,9 @@
 # UI Library for Vue.js 3
 
+### Functionaliteit done
+* NkButton
+* NkButtonGroup
+
 ### goals
 * 15 components (kiezen)
   * 5 base
