@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "baseUrl": ".",
     "paths": {
       "nonk-ui": ["src"],
       "nonk-ui/*": ["src/*"],
       "@/*": ["src/*"]
-    }
+    },
+    "types": ["vite/client"]
   },
-
   "include": [
     "src/**/*",
-    "playground/**/*"
+    "playground/**/*",
+    "vite.config.ts"
   ]
 }

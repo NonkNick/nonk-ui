@@ -1,63 +1,56 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 .nk-button {
   // Base styles
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 4px;
+  border-radius: $border-radius;
   cursor: pointer;
   font-family: inherit;
-  transition: all 0.2s ease;
+  transition: all $transition-speed $transition-easing;
 
-  // Variants
+  // Variants - use mixins and variables
   &--primary {
-    background-color: #007bff;
-    color: white;
-
-    &:hover:not(.nk-button--disabled) {
-      background-color: #0056b3;
-    }
+    @include button-variant($color-primary, $color-primary-hover);
   }
 
   &--secondary {
-    background-color: #6c757d;
-    color: white;
-
-    &:hover:not(.nk-button--disabled) {
-      background-color: #545b62;
-    }
+    @include button-variant($color-secondary, $color-secondary-hover);
   }
 
   &--outline {
     background-color: transparent;
-    border: 2px solid #007bff;
-    color: #007bff;
+    border: $border-width solid $color-primary;
+    color: $color-primary;
 
     &:hover:not(.nk-button--disabled) {
-      background-color: #007bff;
+      background-color: $color-primary;
       color: white;
     }
   }
 
-  // Sizes
+  &--danger {
+    @include button-variant($color-danger, $color-danger-hover);
+  }
+
+  // Sizes - use variables
   &--small {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    @include button-size($button-padding-sm, $font-size-sm);
   }
 
   &--medium {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    @include button-size($button-padding-md, $font-size-md);
   }
 
   &--large {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.125rem;
+    @include button-size($button-padding-lg, $font-size-lg);
   }
 
   // Disabled state
   &--disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+    @include disabled-state;
   }
 }
