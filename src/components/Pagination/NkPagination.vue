@@ -1,5 +1,4 @@
 <template>
-  <h1>NkPagination demo</h1>
 
 </template>
 
