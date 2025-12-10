@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.nk-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  fill: currentColor;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+
+  transition: color $transition-speed $transition-easing;
+
+  &--small {
+    font-size: $font-size-sm;
+  }
+
+  &--medium {
+    font-size: $font-size-md;
+  }
+
+  &--large {
+    font-size: $font-size-lg;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+    }
+  }
+
+}
