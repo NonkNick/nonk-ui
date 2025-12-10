@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.nk-pagination {
+  display: inline-flex;
+  gap: $spacing-xs;
+  align-items: center;
+
+  &__button {
+    @include button-size($button-padding-sm, $font-size-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    border: $border-width solid $color-primary;
+    border-radius: $border-radius;
+    background-color: transparent;
+    color: $color-primary;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all $transition-speed $transition-easing;
+
+    &:hover:not(&--disabled):not(&--active) {
+      background-color: lighten($color-primary, 45%);
+    }
+
+    &--active {
+      background-color: $color-primary;
+      color: white;
+      cursor: default;
+    }
+
+    &--disabled {
+      @include disabled-state;
+      border-color: $color-secondary;
+      color: $color-secondary;
+    }
+  }
+}

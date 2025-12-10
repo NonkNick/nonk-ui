@@ -7,5 +7,4 @@ export interface NkPaginationProps {
 
 export interface NkPaginationEmits {
     (e: 'update:currentPage', page: number): void;
-    (e: 'pageChange', page: number): void;
 }
