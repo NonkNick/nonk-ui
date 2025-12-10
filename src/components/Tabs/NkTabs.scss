@@ -1,2 +1,40 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
+
+.nk-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__nav {
+    display: flex;
+    gap: $spacing-xs;
+    border-bottom: 2px solid $border-color;
+    margin-bottom: $spacing-md;
+  }
+
+  &__tab {
+    border: none;
+    background: transparent;
+    color: $text-muted;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    border-radius: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-main;
+      background-color: $surface-subtle;
+    }
+
+    &.active {
+      color: $color-primary;
+      border-bottom-color: $color-primary;
+      background: transparent;
+    }
+  }
+
+  &__content {
+    padding: $spacing-sm;
+  }
+}

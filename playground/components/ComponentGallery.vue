@@ -5,7 +5,7 @@
   <ButtonGroupDemo/>
   <IconDemo/>
   <CardDemo/>
-<!--  <LinkDemo/>-->
+  <LinkDemo/>
   <!-- 7 mid -->
   <TabsDemo/>
   <!-- 3 complex -->

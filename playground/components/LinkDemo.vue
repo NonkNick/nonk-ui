@@ -1,8 +1,10 @@
 <template>
   <h1>Link demo</h1>
-  <LinkDemo>
+  <NkLink>
+    <a href="https://www.google.com">google.com</a>
+  </NkLink>
 
-  </LinkDemo>
+
 </template>
 
 <script setup lang="ts">
