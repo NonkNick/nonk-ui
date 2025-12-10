@@ -1,5 +1,4 @@
 <template>
-  <h1>NkPagination demo</h1>
 
 </template>
 
@@ -7,6 +6,6 @@
 
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import "./NkPagination.scss";
 </style>
