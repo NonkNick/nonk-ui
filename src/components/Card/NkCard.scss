@@ -1,0 +1,37 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.nk-card {
+  display: flex;
+  flex-direction: column;
+
+  // Use generic surface and border variables
+  background-color: $surface-base;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  color: $text-main;
+  @include shadow-lg;
+
+  // Header - Uses the "subtle" surface color
+  &__header {
+    padding: $spacing-md;
+    border-bottom: $border-width solid $border-color;
+    background-color: $surface-subtle;
+    font-weight: 600;
+  }
+
+  // Body
+  &__body {
+    padding: $spacing-md;
+    flex: 1;
+  }
+
+  // Footer - Uses the "subtle" surface color
+  &__footer {
+    padding: $spacing-md;
+    border-top: $border-width solid $border-color;
+    background-color: $surface-subtle;
+    color: $text-muted; // Footer text is often lighter
+  }
+}

@@ -4,6 +4,7 @@
   <ButtonDemo/>
   <ButtonGroupDemo/>
   <IconDemo/>
+  <CardDemo/>
   <!-- 7 mid -->
   <!-- 3 complex -->
   <PaginationDemo/>
@@ -15,6 +16,7 @@ import ButtonDemo from "./ButtonDemo.vue";
 import ButtonGroupDemo from "./ButtonGroupDemo.vue";
 import PaginationDemo from "./PaginationDemo.vue";
 import IconDemo from "./IconDemo.vue";
+import CardDemo from "./CardDemo.vue";
 </script>
 
 <style scoped>
