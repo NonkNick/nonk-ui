@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import DemoPage from "./components/DemoPage.vue";
+import ComponentGallery from "./components/ComponentGallery.vue";
 </script>
 
 <template>
-    <DemoPage/>
+    <ComponentGallery/>
 </template>
 
 <style scoped>
