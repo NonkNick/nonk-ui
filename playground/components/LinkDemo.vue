@@ -9,6 +9,7 @@
 
 <script setup lang="ts">
 
+import {NkLink} from "@/components/Link";
 </script>
 
 <style scoped>
