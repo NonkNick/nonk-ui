@@ -1,2 +1,6 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
 .nk-link {
+  border: $border-width solid $color-primary;
 }
