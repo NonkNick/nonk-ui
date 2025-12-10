@@ -5,6 +5,7 @@
   <ButtonGroupDemo/>
   <IconDemo/>
   <CardDemo/>
+<!--  <LinkDemo/>-->
   <!-- 7 mid -->
   <TabsDemo/>
   <!-- 3 complex -->
@@ -19,6 +20,7 @@ import PaginationDemo from "./PaginationDemo.vue";
 import IconDemo from "./IconDemo.vue";
 import CardDemo from "./CardDemo.vue";
 import TabsDemo from "./TabsDemo.vue";
+import LinkDemo from "./LinkDemo.vue";
 </script>
 
 <style scoped>
