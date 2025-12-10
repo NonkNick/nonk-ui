@@ -15,6 +15,15 @@
   * 3 complex
     `Color Picker, Date Input, Datepicker, Progress Indicator, Rich Text Editor, Segmented Control, Slider, Stepper`
 
+### 5 base keuzes:
+* Button (stiekem complexer)
+* ButtonGroup
+* Card
+* textinput/textarea
+* Icon
+### 7 middle keuzes:
+* pagination/navigation
+
 Ik zie dat dit ook voor de volgende opdracht is dus dat ook in gedachte houden.
 
 

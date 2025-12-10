@@ -7,5 +7,5 @@
 </script>
 
 <style scoped lang="scss">
-@import "./NkPagination.scss";
+@import "./NkCard.scss";
 </style>

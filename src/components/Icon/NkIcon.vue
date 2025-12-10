@@ -1,4 +1,5 @@
 <template>
+  <i>testicon</i>
 
 </template>
 
@@ -6,6 +7,6 @@
 
 </script>
 
-<style scoped lang="scss">
-@import "./NkPagination.scss";
+<style scopedlang="scss">
+@import "./NkIcon.scss";
 </style>
