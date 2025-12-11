@@ -1,6 +1,5 @@
 <template>
   <nav class="nk-pagination">
-
     <NkButton
         v-if="showPrevNext"
         :class="['nk-pagination__button', { 'nk-pagination__button--disabled': currentPage === 1 }]"
