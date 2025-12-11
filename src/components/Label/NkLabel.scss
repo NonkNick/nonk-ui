@@ -1,0 +1,9 @@
+@use '../../styles/variables' as *;
+
+.nk-label {
+  display: inline-block;
+  margin-bottom: $spacing-xs;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  color: $text-main;
+}

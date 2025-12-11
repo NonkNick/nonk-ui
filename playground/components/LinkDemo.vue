@@ -1,5 +1,5 @@
 <template>
-  <h1>Link demo</h1>
+  <h1>NkLink demo</h1>
   <NkLink>
     <a href="https://www.google.com">google.com</a>
   </NkLink>
@@ -9,6 +9,7 @@
 
 <script setup lang="ts">
 
+import {NkLink} from "@/components/Link";
 </script>
 
 <style scoped>

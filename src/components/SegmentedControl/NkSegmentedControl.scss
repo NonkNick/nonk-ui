@@ -1,0 +1,34 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.nk-segmented-control {
+  display: inline-flex;
+  background-color: $surface-subtle;
+  border-radius: $border-radius;
+  padding: $spacing-xs;
+  gap: $spacing-xs;
+
+  &__option {
+    padding: $spacing-sm $spacing-md;
+    border: none;
+    background-color: transparent;
+    color: $text-main;
+    border-radius: calc($border-radius - 2px);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: $font-size-md;
+    font-weight: 500;
+    transition: all $transition-speed $transition-easing;
+    white-space: nowrap;
+
+    &:hover:not(&--active) {
+      background-color: rgba($color-primary, 0.1);
+    }
+
+    &--active {
+      background-color: $surface-base;
+      color: $color-primary;
+      @include shadow-sm;
+    }
+  }
+}
